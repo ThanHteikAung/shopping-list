@@ -6,7 +6,7 @@ const formEl = document.querySelector("#myForm"); //get the form element wieh id
 formEl.addEventListener("submit",function(event){
     event.preventDefault();                       //prevent the default form submission (page reload)
     addItem();                                    //call addItem()
-    inputEl.value = "";                           //clear text inside of input txt box
+    document.getElementById("myForm").reset();    //clear text inside of input txt box
 })
 
 /* add shopping item */
